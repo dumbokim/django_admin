@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import CustomerList, Table2
+# from .models import CampingcarDateTime
 
 # To connect with DB
 # py manage.py inspectdb > mainapp/models.py
@@ -7,14 +7,14 @@ from .models import CustomerList, Table2
 
 # Register your models here.
 
-class Table2Admin(admin.ModelAdmin):
-    search_fields = ['name']
+# class Table2Admin(admin.ModelAdmin):
+#     search_fields = ['name']
 
-class Table1Admin(admin.ModelAdmin):
-    list_display = ('custom_id', 'custom_name', 'reserve_date', 
-    'rent_date', 'rent_time','return_date', 'return_time')
+# class Table1Admin(admin.ModelAdmin):
+#     list_display = ('id', 
+#     'rent_date', 'rent_time','return_date', 'return_time', 'name', 'phone')
 
 
-admin.site.register(Table2, Table2Admin)
+# admin.site.register(CampingcarDateTime, Table1Admin)
 
-admin.site.register(CustomerList, Table1Admin)
+# admin.site.register(CustomerList, Table1Admin)
